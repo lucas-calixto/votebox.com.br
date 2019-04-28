@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="keyword" name="pesquisas online, pesquisa, votação, pesquisa de satisfação, satisfação de clientes">
+        <meta content="descripton" name="Sistema de ciação e publicação de questionários online e gratuito.">
+
+        <!-- Favicons -->
+        <link href="assets/img/favicon.ico" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!--
+        =======================================================
+          Theme Name: NewBiz
+          Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+          Author: BootstrapMade.com
+          License: https://bootstrapmade.com/license/
+        =======================================================
+        -->
+    </head>
+
+    <body>
+        <header id="header" class="fixed-top">
+            <div class="container">
+                <div class="logo float-left">
+                    <!-- <h1 class="text-light"><a href="#header"><span>VoteBox</span></a></h1> -->
+                    <a href="#intro" class="scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                </div>
+                <nav class="main-nav float-right d-none d-lg-block">
+                    <ul>
+                        <li class="active"><a href="#intro">{% trans "Inicio" %}</a></li>
+                        <li><a href="#about">{% trans "Sobre" %}</a></li>
+                        <li><a href="#services">{% trans "Recursos" %}</a></li>
+                        <li><a href="#contact">{% trans "Contato" %}</a></li>
+                        <li><a href="/app">{% trans "Sistema" %}</a></li>
+                        <li class="drop-down"><a href="#"><i class="fa fa-flag"></i></a>
+                            <ul>
+                                <li><a href="/br"><img src="https://img.icons8.com/color/48/000000/brazil.png"> {% trans "Português" %}</a></li>
+                                <li><a href="/en"><img src="https://img.icons8.com/color/48/000000/usa.png"> {% trans "Inglês" %}</a></li>
+                                <li><a href="/es"><img src="https://img.icons8.com/color/48/000000/spain-2.png"> {% trans "Espanhol" %}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="intro" class="clearfix">
+            <div class="container">
+                <div class="intro-img">
+                    <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
+                </div>
+                <div class="intro-info">
+                    <h2>{% trans "Crie uma pequisa<br><span>gratuita</span><br>agora mesmo!" %}</h2>
+                    <div>
+                        <a href="/app/registrar" class="btn-get-started scrollto">{% trans "Criar Pesquisa" %}</a>
+                        <a href="#services" class="btn-services scrollto">{% trans "Recursos" %}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main id="main">
+            <section id="about">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>{% trans "O Que Fazemos" %}</h3>
+                        <p>{% trans "Veja um pouco dos trabalhos que fazemos e como podemos te ajudar." %}</p>
+                    </header>
+                    <div class="row about-container">
+                        <div class="col-lg-6 content order-lg-1 order-2">
+                            <p>{% trans "A <strong>VoteBox</strong> e uma startup que atua na área de pesquisas, além de disponibilizar um ferramenta <i>gratuita</i> para criação e publicação de questionários on-line." %}</p>
+                            <div class="icon-box wow fadeInUp">
+                                <div class="icon"><i class="fa fa-shopping-cart"></i></div>
+                                <h4 class="title"><a href="/app">{% trans "Pesquisas de Preços" %}</a></h4>
+                                <p class="description">{% trans "Fazemos pesquisa de preços e inflação na região do <i>norte de Minas Gerais</i>, para ajudar os consumidores a fazerem melhores compras." %}</p>
+                            </div>
+                            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon"><i class="fa fa-user-plus"></i></div>
+                                <h4 class="title"><a href="/app">{% trans "Pesquisas de Satisfação" %}</a></h4>
+                                <p class="description">{% trans "Fazemos pesquisas de satisfação de clientes, para ajudar as empresas e desenvolveremos melhores produtos e serviços." %}</p>
+                            </div>
+                            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon"><i class="fa fa-briefcase"></i></div>
+                                <h4 class="title"><a href="/app">{% trans "Pesquisas de Mercado" %}</a></h4>
+                                <p class="description">{% trans "Também fazemos pesquisas de mercado, com o intuito de ajudar os novos empreededores a começar o seu negócio." %}</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+                            <img src="assets/img/quem_somos_um.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row about-extra">
+                        <div class="col-lg-6 wow fadeInUp">
+                            <img src="assets/img/quem_somos_dois.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                            <h4>{% trans "A <strong>VoteBox</strong> disponibilisa de forma <i>gratuita</i> um sistema de questionários o-nline." %}</h4>
+                            <p>{% trans "Caso você possua conhecimento com pesquisas, você mesmo pode, utilizando nosso sistema criar e publicar seus questionários on-line, utilizado a sua rede de contatos e as redes sóciais da sua preferência." %}</p>
+                            <p>{% trans "Ou se você quer fazer um questionário simples de <strong>cadastro de usuários</strong>, ou qual time tem mais torcedores na sua turma, usando nosso sistema e muito fácil." %}</p>
+                            <p><a href="/app/registrar" class="btn btn-group-lg btn-success">{% trans "Criar Pesquisa" %}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section-bg">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>{% trans "Recursos" %}</h3>
+                        <p>{% trans "Estes são alguns dos nossos recursos, que irá fazer você escolher o <strong>VoteBox</strong> para fazer suas pesquisas on-line." %}</p>
+                    </header>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+                            <div class="box">
+                                <div class="icon"><i class="ion-ios-settings" style="color: #ff689b;"></i></div>
+                                <h4 class="title">{% trans "Váriois Tipos" %}</h4>
+                                <p class="description">{% trans "Nosso sistema oferece diversos tipois de perguntas na confecção dos seus formulários." %}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+                            <div class="box">
+                                <div class="icon"><i class="ion-social-instagram-outline" style="color: #e9bf06;"></i></div>
+                                <h4 class="title">{% trans "Redes Sóciais" %}</h4>
+                                <p class="description">{% trans "Divulge seu questinário nas diversas redes sóciais, utilizando um link muito bem trabalhado." %}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                            <div class="box">
+                                <div class="icon"><i class="ion-ios-pie-outline" style="color: #3fcdc7;"></i></div>
+                                <h4 class="title">{% trans "Avaliação Detalhada" %}</h4>
+                                <p class="description">{% trans "Veja em tempo real os resultados dos seus questionários pelo painel de controle, de forma analítica e sistetica." %}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                            <div class="box">
+                                <div class="icon"><i class="ion-lock-combination" style="color:#41cf2e;"></i></div>
+                                <h4 class="title">{% trans "Privacidade" %}</h4>
+                                <p class="description">{% trans "Nosso sistema permite deixar seu questionário publico ou privado, mantendo assim a privacidade dos dados recebidos." %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>{% trans "Nosso time" %}</h3>
+                        <p>{% trans "Somos apoaixonados pelo que fazemos, por isso entregamos os melhores serviços pra você!" %}</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp"></div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp">
+                            <div class="member">
+                                <img src="assets/img/lucas-calixto.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Lucas Calixto</h4>
+                                        <span>Chief Executive Officer</span>
+                                        <div class="social">
+                                            <a href="https://www.instagram.com/lucas_calixto"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://fb.com/lucas.clst"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://www.linkedin.com/in/lucas-calixto-de-oliveira-b9b94262/"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp">
+                            <div class="member">
+                                <img src="assets/img/stanele-janyfer.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Stanele Julle</h4>
+                                        <span>Chief Financial Officer</span>
+                                        <div class="social">
+                                            <a href="https://www.instagram.com/stanellesilveira/"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/stanellejulle"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://www.linkedin.com/in/stanelle-julle-silveira-922b1556/"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why-us" class="wow fadeIn">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>{% trans "Nossos Números" %}</h3>
+                    </header>
+                    <div class="row counters">
+                        <div class="col-lg-4 col-6 text-center">
+                            <span data-toggle="counter-up">254</span>
+                            <p>{% trans "Usuários" %}</p>
+                        </div>
+                        <div class="col-lg-4 col-6 text-center">
+                            <span data-toggle="counter-up">397</span>
+                            <p>{% trans "Questionários" %}</p>
+                        </div>
+                        <div class="col-lg-4 col-12 text-center">
+                            <span data-toggle="counter-up">60.658</span>
+                            <p>{% trans "Respostas" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container-fluid">
+                    <div class="section-header">
+                        <h3>{% trans "Contato" %}</h3>
+                    </div>
+                    <div class="row wow fadeInUp">
+                        <div class="col-lg-6">
+                            <div class="map mb-4 mb-lg-0">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.3303050776903!2d-43.034256144320956!3d-15.748983678029255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x752281c2c0dfa35%3A0xe68eb712dc75f9dc!2sR.+Suet%C3%B4nio+da+Silva+Jr%2C+234%2C+Porteirinha+-+MG%2C+39520-000!5e1!3m2!1spt-BR!2sbr!4v1556367860747!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0; width: 100%; height: 323px;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-5 info">
+                                    <i class="ion-ios-location-outline"></i>
+                                    <p>Rua Setônio da Silva Junior, 234 Vila Kennedy - Porteirinha/MG</p>
+                                </div>
+                                <div class="col-md-4 info">
+                                    <i class="ion-ios-email-outline"></i>
+                                    <p>contato@votebox.com.br</p>
+                                </div>
+                                <div class="col-md-3 info">
+                                    <i class="ion-ios-telephone-outline"></i>
+                                    <p>(38)99919-4441</p>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div id="sendmessage">{% trans "Sua mensagem foi envida, obrigado!" %}</div>
+                                <div id="errormessage"></div>
+                                <form action="" method="post" role="form" class="contactForm">
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="{% trans "Nome" %}" data-rule="minlen:4" data-msg="{% trans "Insira ao menos 4 caracteres" %}" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="{% trans "Insira um e-mail válido" %}" />
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="{% trans "Mensagem" %}" data-rule="minlen:8" data-msg="{% trans "Insira ao menos 8 caracteres" %}" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="{% trans "Escreva uma mensagem" %}" placeholder="{% trans "Mensagem" %}"></textarea>
+                                        <div class="validation"></div>
+                                    </div>
+                                        <div class="text-center"><button type="submit" title="Enviar Mensagem">{% trans "Enviar Mensagem" %}</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 footer-info">
+                            <h3>ByteBee</h3>
+                            <p>{% trans "A empresa que esta por tras da VoteBox e a <strong>ByteBee Sistemas</strong>, que mantem o software de questionários sempre on-line, além de dar superte e atualizar o mesmo sempre que necessário, dando comodidade e segurança aos clientes." %}</p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>{% trans "Links Uteis" %}</h4>
+                            <ul>
+                                <li><a href="#intro">{% trans "Inicio" %}</a></li>
+                                <li><a href="#about">{% trans "Sobre" %}</a></li>
+                                <li><a href="https://www.bytebee.com.br">ByteBee Sistemas</a></li>
+                                <li><a href="https://www.beecard.net.br">BeeCard</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>{% trans "Contate-nos" %}</h4>
+                            <p>
+                                Rua Suetônio da Silva Junior nº 234 <br>
+                                Vila Kennedy, Porteirinha/MG<br>
+                                Brasil <br>
+                                <strong>Fone:</strong> +55 (38) 9 9919-4441<br>
+                                <strong>Email:</strong> contato@votebox.com.br<br>
+                            </p>
+                            <!--
+                            <div class="social-links">
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-newsletter">
+                            <h4>{% trans "Novidades" %}</h4>
+                            <p>{% trans "Fique sempre por dentro das nossas novidades e atualizações, basta cadastrar o seu e-mail que dexaremos você sempre bem informado." %}</p>
+                            <form action="/cadastra-email" method="post">
+                                <input type="email" name="email"><input type="submit"  value="Cadastrar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>VoteBox</strong>. {% trans "Todos os direitos reservados" %}
+                </div>
+                <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact.
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+                    -->
+                    {% trans "Tema inspirado por" %} <a href="https://bootstrapmade.com/">BootstrapMade</a> - {% trans "Imagens por" %} <a href="https://br.freepik.com/fotos-vetores-gratis/infografico">br.freepik.com</a>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+
+        <!-- JavaScript Libraries -->
+        <script src="assets/lib/jquery/jquery.min.js"></script>
+        <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+        <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/lib/easing/easing.min.js"></script>
+        <script src="assets/lib/mobile-nav/mobile-nav.js"></script>
+        <script src="assets/lib/wow/wow.min.js"></script>
+        <script src="assets/lib/waypoints/waypoints.min.js"></script>
+        <script src="assets/lib/counterup/counterup.min.js"></script>
+        <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+        <!-- Contact Form JavaScript File -->
+        <script src="assets/contactform/contactform.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -7,17 +7,19 @@
             "email": "lucas@bytebee.com.br"
         }
     ],
-    "autolader": {
+    "autoload": {
         "psr-4": {
             "Controllers\\": "Controllers",
+            "Helpers\\": "Helpers",
             "Models\\": "Models"
         }
     },
     "require": {
-        "twig/twig": "v2.8.1",
         "phpmailer/phpmailer": "6.0.x-dev",
         "php-activerecord/php-activerecord": "v1.2.0",
         "pecee/simple-router": "4.2.0.6",
-        "monolog/monolog": "2.x-dev"
+        "monolog/monolog": "2.x-dev",
+        "twig/twig": "2.x-dev",
+        "twig/extensions": "dev-master"
     }
 }

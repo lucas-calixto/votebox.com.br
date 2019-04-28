@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02550df8df89a944a2dabf7ca9110b8f",
+    "content-hash": "995d396efc8f510905aea61e58996689",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",
@@ -822,17 +822,72 @@
             "time": "2019-02-08T14:16:39+00:00"
         },
         {
-            "name": "twig/twig",
-            "version": "v2.8.1",
+            "name": "twig/extensions",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "91cc2594d3143761ce0399c1caffd0b500ffe5b9"
+                "url": "https://github.com/twigphp/Twig-extensions.git",
+                "reference": "9aefd75d87dea6d0dfbf04469ce939b4b29dabc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/91cc2594d3143761ce0399c1caffd0b500ffe5b9",
-                "reference": "91cc2594d3143761ce0399c1caffd0b500ffe5b9",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/9aefd75d87dea6d0dfbf04469ce939b4b29dabc9",
+                "reference": "9aefd75d87dea6d0dfbf04469ce939b4b29dabc9",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "^1.27|^2.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.4",
+                "symfony/translation": "^2.7|^3.4|^4.2"
+            },
+            "suggest": {
+                "symfony/translation": "Allow the time_diff output to be translated"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_Extensions_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\Extensions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Common additional features for Twig that do not directly belong in core",
+            "keywords": [
+                "i18n",
+                "text"
+            ],
+            "time": "2019-02-05T07:01:18+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "6463d6377da6cba9d6be21eb9772dbf468440b53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6463d6377da6cba9d6be21eb9772dbf468440b53",
+                "reference": "6463d6377da6cba9d6be21eb9772dbf468440b53",
                 "shasum": ""
             },
             "require": {
@@ -848,7 +903,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.9-dev"
                 }
             },
             "autoload": {
@@ -886,7 +941,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-04-16T17:14:24+00:00"
+            "time": "2019-04-28T06:58:23+00:00"
         }
     ],
     "packages-dev": [],
@@ -894,7 +949,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "phpmailer/phpmailer": 20,
-        "monolog/monolog": 20
+        "monolog/monolog": 20,
+        "twig/twig": 20,
+        "twig/extensions": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
